@@ -1,0 +1,9 @@
+[user]
+	name = knmsyk 
+	email = kounomasayuki@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+	quotepath = false
+[include]
+    	path = ~/.gitconfig_common
