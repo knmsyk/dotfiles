@@ -32,7 +32,7 @@ DISABLE_AUTO_UPDATE="false"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump brew brew-cask bundler capistrano colorize cp emacs gem git github gitignore gradle lein npm osx pip pod postgres python rails rake ruby symfony2 web-search xcode)
+plugins=(autojump brew brew-cask bundler capistrano colorize cp emacs gem git github gitignore gradle lein npm osx pip pod postgres python rails rake rbenv ruby symfony2 web-search xcode)
 
 source $ZSH/oh-my-zsh.sh
 
