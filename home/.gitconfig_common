@@ -13,5 +13,6 @@
         r = remote -v
         s = status
         ls = ls-files
+	delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|master'|xargs git branch -d; };f"
 [color]
         ui = true
