@@ -1,6 +1,6 @@
 [alias]
-        graph = log --graph --branches --date=short --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
-        g = log --graph --branches --date=short --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
+        graph = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
+        g = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
         logall = log --decorate --graph --branches --tags --remotes --name-status
         l = log --decorate --graph --branches --tags --remotes --name-status
         a = add .
