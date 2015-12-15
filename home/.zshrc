@@ -32,7 +32,7 @@ ZSH_THEME="ys"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(adb autojump brew brew-cask bundler capistrano cask colorize cp emacs gem git gitignore gradle lein npm osx pip pod postgres python rails rake rbenv ruby symfony2 web-search xcode)
+plugins=(adb autojump brew brew-cask bundler capistrano cask colorize cp emacs gem git github gitignore gradle lein mix npm osx pip pod postgres python rails rake rbenv ruby symfony2 web-search xcode)
 
 source $ZSH/oh-my-zsh.sh
 
