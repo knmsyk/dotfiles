@@ -7,3 +7,5 @@
 	quotepath = false
 [include]
     	path = ~/.gitconfig_common
+[credential]
+	helper = osxkeychain
