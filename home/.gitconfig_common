@@ -8,6 +8,7 @@
         amend = commit -a --amend
         b = branch
         c = commit -am
+	ch = checkout
         d = diff
         p = pull
         r = remote -v
