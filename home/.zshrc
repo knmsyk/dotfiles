@@ -15,7 +15,7 @@ ZSH_THEME="ys"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-DISABLE_AUTO_UPDATE="false"
+# DISABLE_AUTO_UPDATE="false"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -32,7 +32,7 @@ DISABLE_AUTO_UPDATE="false"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump bower brew brew-cask bundler capistrano colorize cp emacs gem git github gitignore gradle lein mix npm osx pip pod postgres python rails rake rbenv ruby symfony2 web-search xcode)
+plugins=(adb autojump bower brew brew-cask bundler capistrano cask colorize cp emacs gem git github gitignore gradle lein mix npm osx pip pod postgres python rails rake rbenv ruby symfony2 web-search xcode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -45,5 +45,13 @@ setopt auto_cd
 setopt auto_pushd
 #setopt correct
 
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+autoload -Uz up-line-or-beginning-search
+autoload -Uz down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey '\eOA' up-line-or-beginning-search
+bindkey '\e[A' up-line-or-beginning-search
+bindkey '\eOB' down-line-or-beginning-search
+bindkey '\e[B' down-line-or-beginning-search
+
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"

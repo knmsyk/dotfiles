@@ -5,6 +5,7 @@
 	excludesfile = ~/.gitignore_global
 	editor = vim
 	quotepath = false
+	precomposeunicode = true
 [include]
     	path = ~/.gitconfig_common
 [credential]

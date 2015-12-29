@@ -48,7 +48,7 @@ endfunction
 " ・改行コード方式(dos,mac,unix)
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,utf-8,ucs-2,cp932,sjis
+"set fileencodings=iso-2022-jp,euc-jp,utf-8,ucs-2,cp932,sjis
 set fileformat=unix
 
 " コマンド設定

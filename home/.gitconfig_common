@@ -1,6 +1,6 @@
 [alias]
-        graph = log --graph --branches --date=short --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
-        g = log --graph --branches --date=short --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
+        graph = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
+        g = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
         logall = log --decorate --graph --branches --tags --remotes --name-status
         l = log --decorate --graph --branches --tags --remotes --name-status
         a = add .
@@ -14,5 +14,6 @@
         r = remote -v
         s = status
         ls = ls-files
+	delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|master'|xargs git branch -d; };f"
 [color]
         ui = true
