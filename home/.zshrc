@@ -1,55 +1,41 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+antigen use oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="ys"
+antigen bundle adb
+antigen bundle autojump
+antigen bundle brew
+antigen bundle brew-cask
+antigen bundle capistrano
+antigen bundle colorize
+antigen bundle cp
+antigen bundle docker
+antigen bundle docker-compose
+antigen bundle emacs
+antigen bundle git
+antigen bundle gitignore
+antigen bundle gradle
+antigen bundle npm
+antigen bundle osx
+antigen bundle pip
+antigen bundle pod
+antigen bundle postgres
+antigen bundle pyenv
+antigen bundle python
+antigen bundle rake
+antigen bundle rbenv
+antigen bundle ruby
+antigen bundle symfony2
+antigen bundle web-search
+antigen bundle xcode
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+# antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="false"
+antigen theme ys
 
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
+antigen apply
 
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
+bindkey '^ ' autosuggest-accept
 
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(adb autojump bower brew brew-cask bundler capistrano cask coffee colorize cp docker docker-compose emacs gem git github gitignore gradle heroku lein mix node npm osx pip pod postgres pyenv python rails rake rbenv ruby symfony2 web-search xcode)
-
-source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
 HISTSIZE=999999
 SAVEHIST=999999
-
-# setopt
-setopt auto_cd
-setopt auto_pushd
-#setopt correct
-
-autoload -Uz up-line-or-beginning-search
-autoload -Uz down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey '\eOA' up-line-or-beginning-search
-bindkey '\e[A' up-line-or-beginning-search
-bindkey '\eOB' down-line-or-beginning-search
-bindkey '\e[B' down-line-or-beginning-search
