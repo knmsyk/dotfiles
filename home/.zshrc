@@ -1,25 +1,19 @@
-antigen use oh-my-zsh
+# Load antibody
+antibody bundle < "$HOME/.zsh/bundles.txt"
 
-antigen bundle adb
-antigen bundle brew
-antigen bundle brew-cask
-antigen bundle docker
-antigen bundle docker-compose
-antigen bundle gradle
-antigen bundle osx
-antigen bundle postgres
-antigen bundle pyenv
-antigen bundle rake
+# Load plugins
+zplug "plugins/adb", from:oh-my-zsh
+zplug "plugins/brew", from:oh-my-zsh
+zplug "plugins/brew-cask", from:oh-my-zsh
+zplug "plugins/docker", from:oh-my-zsh
+zplug "plugins/docker-compose", from:oh-my-zsh
+zplug "plugins/gradle", from:oh-my-zsh
+zplug "plugins/postgres", from:oh-my-zsh
+zplug "plugins/pyenv", from:oh-my-zsh
+zplug "plugins/rake", from:oh-my-zsh
+zplug "themes/ys", from:oh-my-zsh
+zplug load
 
-# antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-# antigen bundle zsh-users/zsh-syntax-highlighting
-
-antigen theme ys
-
-antigen apply
-
-bindkey '^ ' autosuggest-accept
-
+# Config
 HISTSIZE=999999
 SAVEHIST=999999
