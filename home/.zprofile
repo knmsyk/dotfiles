@@ -1,7 +1,7 @@
 export LANG=ja_JP.UTF-8
 
 # antibody
-source $(brew --prefix)/share/antibody.zsh
+source <(antibody init)
 
 # zplug
 source $HOME/.zplug/zplug
