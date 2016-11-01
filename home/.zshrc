@@ -5,9 +5,6 @@ antibody bundle < "$HOME/.zsh/bundles.txt"
 zplug "plugins/adb", from:oh-my-zsh
 zplug "plugins/brew", from:oh-my-zsh
 zplug "plugins/gradle", from:oh-my-zsh
-zplug "plugins/postgres", from:oh-my-zsh
-zplug "plugins/pyenv", from:oh-my-zsh
-zplug "plugins/rake", from:oh-my-zsh
 zplug "themes/ys", from:oh-my-zsh
 
 # Install plugins
