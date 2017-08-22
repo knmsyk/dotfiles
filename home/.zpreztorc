@@ -1,0 +1,15 @@
+zstyle ':prezto:*:*' color 'yes'
+
+zstyle ':prezto:load' pmodule \
+       'completion' \
+       'editor' \
+       'environment' \
+       'git' \
+       'history' \
+       'history-substring-search' \
+       'syntax-highlighting' \
+       'terminal' \
+       'utility'
+
+zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:utility' safe-ops 'no'
