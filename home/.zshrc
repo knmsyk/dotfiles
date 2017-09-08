@@ -7,6 +7,8 @@ if ! zplug check --verbose; then; zplug install; fi
 
 zplug load #--verbose
 
+unsetopt CORRECT
+
 # Config
 HISTSIZE=999999
 SAVEHIST=999999
