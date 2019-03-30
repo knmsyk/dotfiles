@@ -1,5 +1,11 @@
 # homebrew
 export PATH=$HOME/homebrew/bin:$PATH
+export PATH=$HOME/homebrew/sbin:$PATH
+
+
+# homeshick
+source $HOME/.homesick/repos/homeshick/homeshick.sh
+fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 
 # zplug
@@ -21,13 +27,15 @@ HISTSIZE=999999
 SAVEHIST=999999
 
 
-# homeshick
-source $HOME/.homesick/repos/homeshick/homeshick.sh
-fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
-
 
 # rbenv
 eval "$(rbenv init - zsh)"
+
+
+# pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
 
 # gitignore
