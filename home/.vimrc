@@ -92,7 +92,7 @@ set autoindent
 
 filetype on
 autocmd BufNewFile,BufRead *.xml set nowrap tabstop=2 shiftwidth=2
-autocmd BufNewFile,BufRead *.dicon set nowrap tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.sh set nowrap tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.html set nowrap tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.css set nowrap tabstop=2 shiftwidth=2
 autocmd BufNewFile,BufRead *.js  set nowrap tabstop=2 shiftwidth=2
