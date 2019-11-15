@@ -28,13 +28,9 @@ SAVEHIST=999999
 
 
 
-# rbenv
-eval "$(rbenv init - zsh)"
-
-
-# pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+# anyenv
+if command -v anyenv 1>/dev/null 2>&1; then
+  eval "$(anyenv init -)"
 fi
 
 
