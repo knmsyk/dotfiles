@@ -1,6 +1,6 @@
 [user]
-        name = knmsyk
-        email = kounomasayuki@gmail.com
+        name = msyk
+        email = kouno@msyk.works
 [core]
         editor = vim
         quotepath = false
@@ -37,7 +37,6 @@
         ls = ls-files
         delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|master'|xargs git branch -d; };f"
         root = !cd `git rev-parse --show-toplevel`
-        prune = pull --prune
         stash-all = stash save --include-untracked
         cached = diff --cached
 
