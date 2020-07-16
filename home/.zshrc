@@ -36,3 +36,6 @@ fi
 
 # gitignore
 function gi() { curl -s https://www.gitignore.io/api/$@ ;}
+
+# neovim
+alias vim='nvim'
