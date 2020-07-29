@@ -2,19 +2,13 @@
         name = msyk
         email = kouno@msyk.works
 [core]
-        editor = vim
+        editor = nvim
         quotepath = false
         precomposeunicode = true
         attributesfile = ~/.gitattributes
         pager = diff-so-fancy | less --tabs=4 -RFX
-        excludesfile = ~/.gitignore_global
 [credential]
         helper = osxkeychain
-[color "diff-highlight"]
-        oldNormal = red bold
-        oldHighlight = red bold 52
-        newNormal = green bold
-        newHighlight = green bold 22
 [color]
         ui = true
 [diff "plist"]
@@ -39,7 +33,6 @@
         root = !cd `git rev-parse --show-toplevel`
         stash-all = stash save --include-untracked
         cached = diff --cached
-
 [filter "lfs"]
         clean = git-lfs clean -- %f
         smudge = git-lfs smudge -- %f
