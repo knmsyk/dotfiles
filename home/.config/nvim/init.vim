@@ -1,8 +1,10 @@
 call plug#begin(stdpath('data').'/plugged')
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'gisphm/vim-gitignore'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'jceb/vim-orgmode'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " denite
