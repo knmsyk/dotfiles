@@ -1,38 +1,15 @@
 call plug#begin(stdpath('data').'/plugged')
-Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'mcchrish/nnn.vim'
 Plug 'gisphm/vim-gitignore'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'jceb/vim-orgmode'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
-" denite
-autocmd FileType denite call s:denite_my_settings()
-function! s:denite_my_settings() abort
-  nnoremap <silent><buffer><expr> <CR>
-  \ denite#do_map('do_action')
-  nnoremap <silent><buffer><expr> d
-  \ denite#do_map('do_action', 'delete')
-  nnoremap <silent><buffer><expr> p
-  \ denite#do_map('do_action', 'preview')
-  nnoremap <silent><buffer><expr> q
-  \ denite#do_map('quit')
-  nnoremap <silent><buffer><expr> i
-  \ denite#do_map('open_filter_buffer')
-  nnoremap <silent><buffer><expr> <Space>
-  \ denite#do_map('toggle_select').'j'
-endfunction
-autocmd FileType denite-filter call s:denite_filter_my_settings()
-function! s:denite_filter_my_settings() abort
-  inoremap <silent><buffer><expr> <BS> denite#do_map('move_up_path')
-  inoremap <silent><buffer><expr> <C-c> denite#do_map('quit')
-  nnoremap <silent><buffer><expr> <C-c> denite#do_map('quit')
-endfunction
-nmap <silent> ,f :<C-u>Denite file/rec<CR>
-nmap <silent> ,g :<C-u>Denite grep<CR>
-nmap <silent> ,b :<C-u>Denite buffer<CR>
-nmap <silent> ,l :<C-u>Denite line<CR>
+"nnn
+let g:nnn#set_default_mappings = 0
+nnoremap <silent> ,n :NnnPicker<CR>
 
 " deoplate
 let g:deoplete#enable_at_startup = 1

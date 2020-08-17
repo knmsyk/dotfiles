@@ -27,15 +27,16 @@ HISTSIZE=999999
 SAVEHIST=999999
 
 
-
 # anyenv
 if command -v anyenv 1>/dev/null 2>&1; then
   eval "$(anyenv init -)"
 fi
-
 
 # gitignore
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 # neovim
 alias vim='nvim'
+
+# nnn
+alias n='EDITOR=nvim nnn -eHE'
