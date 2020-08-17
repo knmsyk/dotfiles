@@ -12,8 +12,11 @@ let g:nnn#set_default_mappings = 0
 nnoremap <silent> ,n :NnnPicker<CR>
 
 " deoplate
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_completion_start_length = 1
+
+" number
+:set number
 
 " search
 set ignorecase
@@ -29,6 +32,9 @@ set softtabstop=0
 set expandtab
 set smarttab
 set shiftround
+
+" wrap
+set nowrap
 
 " buffer
 nnoremap <silent> <C-x>2 :split<CR>
