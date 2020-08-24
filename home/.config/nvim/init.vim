@@ -15,6 +15,13 @@ nnoremap <silent> ,n :NnnPicker<CR>
 "let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_completion_start_length = 1
 
+" orgmode
+let g:org_indent = 1
+let g:org_todo_keywords = ['TODO', 'ING', '|', 'DONE']
+let g:org_todo_keyword_faces = [['ING', [':foreground yellow', ':background black']], ['TODO', [':foreground red', ':background black']]]
+nnoremap <A-Up> m{
+nnoremap <A-Down> m}
+
 " number
 :set number
 
@@ -56,3 +63,4 @@ vnoremap <C-p> 12k
 
 " mode
 inoremap <silent> jj <ESC>:<C-u>w<CR>
+
