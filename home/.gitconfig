@@ -1,42 +1,42 @@
 [user]
-        name = msyk
-        email = kouno@msyk.works
+    name = msyk
+    email = kouno@msyk.works
 [core]
-        editor = nvim
-        quotepath = false
-        precomposeunicode = true
-        attributesfile = ~/.gitattributes
-        pager = diff-so-fancy | less --tabs=4 -RFX
+    editor = nvim
+    quotepath = false
+    precomposeunicode = true
+    attributesfile = ~/.gitattributes
+    pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
-        helper = osxkeychain
+    helper = osxkeychain
 [color]
-        ui = true
+    ui = true
 [diff "plist"]
-        textconv = plutil -convert xml1 -o -
+    textconv = plutil -convert xml1 -o -
 [alias]
-        graph = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
-        g = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
-        logall = log --decorate --graph --branches --tags --remotes --name-status
-        l = log --decorate --graph --branches --tags --remotes --name-status
-        a = add .
-        aa = add --all .
-        amend = commit -a --amend
-        b = branch
-        c = commit -am
-        ch = checkout
-        d = diff
-        p = pull
-        r = remote -v
-        s = status
-        ls = ls-files
-        delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|master'|xargs git branch -d; };f"
-        root = !cd `git rev-parse --show-toplevel`
-        stash-all = stash save --include-untracked
-        cached = diff --cached
+    graph = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
+    g = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
+    logall = log --decorate --graph --branches --tags --remotes --name-status
+    l = log --decorate --graph --branches --tags --remotes --name-status
+    a = add .
+    aa = add --all .
+    amend = commit -a --amend
+    b = branch
+    c = commit -am
+    ch = checkout
+    d = diff
+    p = pull
+    r = remote -v
+    s = status
+    ls = ls-files
+    delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|master'|xargs git branch -d; };f"
+    root = !cd `git rev-parse --show-toplevel`
+    stash-all = stash save --include-untracked
+    cached = diff --cached
 [filter "lfs"]
-        clean = git-lfs clean -- %f
-        smudge = git-lfs smudge -- %f
-        process = git-lfs filter-process
-        required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 [pull]
-	ff = only
+    ff = only
