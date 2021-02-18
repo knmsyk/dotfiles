@@ -6,6 +6,7 @@ Plug 'gisphm/vim-gitignore'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'jceb/vim-orgmode'
 Plug 'sheerun/vim-polyglot'
+Plug 'slim-template/vim-slim'
 call plug#end()
 
 " leader
