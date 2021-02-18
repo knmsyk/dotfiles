@@ -1,1 +1,2 @@
 inoremap <C-e> <C-o>$
+inoremap <silent> jj <ESC>:<C-u>w<CR>
