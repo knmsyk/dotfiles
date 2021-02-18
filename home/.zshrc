@@ -7,13 +7,17 @@ export PATH=$HOME/homebrew/sbin:$PATH
 source $HOME/.homesick/repos/homeshick/homeshick.sh
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
+# glouc
+export CLOUDSDK_HOME=$HOME/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
 
 # zplug
 export ZPLUG_HOME=$HOME/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 zplug "sorin-ionescu/prezto"
+zplug "lib/functions", from:oh-my-zsh
 zplug "plugins/virtualenv", from:oh-my-zsh
+zplug "plugins/gcloud", from:oh-my-zsh
 zplug "themes/ys", from:oh-my-zsh
 
 if ! zplug check --verbose; then; zplug install; fi
