@@ -49,6 +49,9 @@ set smartindent
 " wrap
 set nowrap
 
+" clipboard
+set clipboard=unnamed
+
 " comment
 noremap <leader>/ :Commentary<cr>
 
