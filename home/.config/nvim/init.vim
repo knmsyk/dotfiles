@@ -43,6 +43,9 @@ set expandtab
 set smarttab
 set shiftround
 
+" indent
+set smartindent
+
 " wrap
 set nowrap
 
