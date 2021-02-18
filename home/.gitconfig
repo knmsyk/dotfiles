@@ -14,18 +14,15 @@
 [diff "plist"]
     textconv = plutil -convert xml1 -o -
 [alias]
-    graph = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
-    g = log --graph --branches --date=iso8601 --pretty='format:%cd %C(yellow)%h %C(cyan)%d %C(red)%s %Creset -- %an, %ar %Creset'
-    logall = log --decorate --graph --branches --tags --remotes --name-status
+    graph = log --graph --branches --date=format:'%y.%m.%d %a %H:%M:%S' --pretty='format:%cd %C(yellow)%h%C(cyan)%d %C(red)%s %Creset- %an %Creset'
+    g = graph
     l = log --decorate --graph --branches --tags --remotes --name-status
     a = add .
-    aa = add --all .
     amend = commit -a --amend
     b = branch
     c = commit -am
     ch = checkout
     d = diff
-    p = pull
     r = remote -v
     s = status
     ls = ls-files
@@ -34,9 +31,9 @@
     stash-all = stash save --include-untracked
     cached = diff --cached
 [filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
-    process = git-lfs filter-process
-    required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [pull]
     ff = only
