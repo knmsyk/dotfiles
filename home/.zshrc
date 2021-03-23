@@ -1,7 +1,10 @@
+# editor
+export EDITOR='nvim'
+export VISUAL=$EDITOR
+
 # homebrew
 export PATH=$HOME/homebrew/bin:$PATH
 export PATH=$HOME/homebrew/sbin:$PATH
-
 
 # homeshick
 source $HOME/.homesick/repos/homeshick/homeshick.sh
@@ -43,3 +46,4 @@ alias vim='nvim'
 
 # nnn
 alias n='EDITOR=nvim nnn -eHE'
+export NNN_PLUG='f:finder;o:fzopen;p:mocplay;d:diffs;t:nmount;v:imgview'

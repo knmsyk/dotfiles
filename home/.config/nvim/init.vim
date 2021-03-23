@@ -1,6 +1,7 @@
 call plug#begin(stdpath('data').'/plugged')
+Plug 'dyng/ctrlsf.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'mcchrish/nnn.vim'
+Plug 'keith/swift.vim'
 Plug 'tpope/vim-commentary'
 Plug 'gisphm/vim-gitignore'
 Plug 'maksimr/vim-jsbeautify'
@@ -11,19 +12,6 @@ call plug#end()
 
 " leader
 let mapleader = " "
-
-"nnn
-let g:nnn#set_default_mappings = 0
-nnoremap <silent> <leader>n :NnnPicker<CR>
-
-" deoplate
-"let g:deoplete#enable_at_startup = 1
-let g:deoplete#auto_completion_start_length = 1
-
-" orgmode
-let g:org_indent = 1
-let g:org_todo_keywords = ['TODO', 'ING', '|', 'DONE']
-let g:org_todo_keyword_faces = [['ING', [':foreground yellow', ':background black']], ['TODO', [':foreground red', ':background black']]]
 
 " number
 :set number
@@ -76,3 +64,21 @@ vnoremap <C-p> 12k
 " mode
 inoremap <silent> jj <ESC>:<C-u>w<CR>
 
+" ctrlsf
+nmap     <C-F>f <Plug>CtrlSFPrompt
+vmap     <C-F>f <Plug>CtrlSFVwordPath
+vmap     <C-F>F <Plug>CtrlSFVwordExec
+nmap     <C-F>n <Plug>CtrlSFCwordPath
+nmap     <C-F>p <Plug>CtrlSFPwordPath
+nnoremap <C-F>o :CtrlSFOpen<CR>
+nnoremap <C-F>t :CtrlSFToggle<CR>
+inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
+
+" deoplate
+"let g:deoplete#enable_at_startup = 1
+let g:deoplete#auto_completion_start_length = 1
+
+" orgmode
+let g:org_indent = 1
+let g:org_todo_keywords = ['TODO', 'ING', '|', 'DONE']
+let g:org_todo_keyword_faces = [['ING', [':foreground yellow', ':background black']], ['TODO', [':foreground red', ':background black']]]
