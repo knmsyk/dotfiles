@@ -5,7 +5,6 @@ Plug 'keith/swift.vim'
 Plug 'tpope/vim-commentary'
 Plug 'gisphm/vim-gitignore'
 Plug 'maksimr/vim-jsbeautify'
-Plug 'jceb/vim-orgmode'
 Plug 'sheerun/vim-polyglot'
 Plug 'slim-template/vim-slim'
 call plug#end()
@@ -77,8 +76,3 @@ inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 " deoplate
 "let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_completion_start_length = 1
-
-" orgmode
-let g:org_indent = 1
-let g:org_todo_keywords = ['TODO', 'ING', '|', 'DONE']
-let g:org_todo_keyword_faces = [['ING', [':foreground yellow', ':background black']], ['TODO', [':foreground red', ':background black']]]
