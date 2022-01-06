@@ -10,7 +10,7 @@ export PATH=$HOME/homebrew/sbin:$PATH
 source $HOME/.homesick/repos/homeshick/homeshick.sh
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
-# glouc
+# gloud
 export CLOUDSDK_HOME=$HOME/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
 
 # zplug
