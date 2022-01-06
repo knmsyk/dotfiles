@@ -1,1 +1,3 @@
 *.plist diff=plist
+.gitattributes export-ignore
+.gitignore export-ignore
