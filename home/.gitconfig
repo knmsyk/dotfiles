@@ -16,6 +16,9 @@
 [alias]
     graph = log --graph --branches --date=format:'%y.%m.%d %a %H:%M:%S' --pretty='format:%cd %C(yellow)%h%C(cyan)%d %C(red)%s %Creset- %an %Creset'
     g = graph
+    logdiff = log --patch-with-stat --abbrev-commit
+    ld = logdiff
+    follow = logdiff --follow
     l = log --decorate --graph --branches --tags --remotes --name-status
     a = add .
     amend = commit -a --amend
